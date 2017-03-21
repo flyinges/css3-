@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="./css/bootstrap.css">-->
+    <!--<link rel="stylesheet" href="./css/bootstrap.min.css">-->
+</head>
+<style>
+    .one{
+        width:200px;height:200px;
+        background: red;
+        /*background: linear-gradient(60deg,rgb(255,0,0) 2%,blue 10%,pink 60%, green );*/
+        -ms-filter:alpha(opacity=40);
+        /*background: -moz-linear-gradient(60deg,rgb(255,0,0) 2%,blue 10%,pink 60%, green );*/
+        /*background: -o-linear-gradient(60deg,rgb(255,0,0) 2%,blue 10%,pink 60%, green );*/
+        /*background: -ms-linear-gradient(60deg,rgb(255,0,0) 2%,blue 10%,pink 60%, green );*/
+        background: -ms-linear-gradient(top, rgb(255, 255, 255), rgb(0, 0, 255));
+    }
+    .two{
+        width:200px;height:200px;-ms-filter:alpha(opacity=0);
+        background: -ms-radial-gradient(darkmagenta,chocolate, rgb(255, 0, 0),rgb(0, 0, 255));
+    }
+    .three{
+        width:200px;
+        height:200px;
+        background: repeating-linear-gradient(red,yellow 10%,green 15%);
+        /*transition-property: width;*/
+        /*transition-timing-function: ease;*/
+        /*transition-duration: 3s;*/
+        transition: width 2s ease 1s,height 2s ease 1s;
+    }
+    .three:hover{
+        width:500px;
+        height:500px;
+    }
+    .four{
+        width:200px;
+        height:200px;
+        background: red;
+        /*transform:translate(100px,100px);*/
+        transition: all 0.2s ease;
+        /*transition:background 2s ease;*/
+    }
+    .four:hover{
+        /*transform:rotate(80deg);*/
+        transform:matrix(0.984807753012208,-0.17364817766693041,0.17364817766693041,0.984807753012208,100,100);
+        /*transform:skew(20deg,20deg);*/
+        /*transform-origin:left top;*/
+        /*transform:scale(0.1,0.1);*/
+        /*background:blue;*/
+    }
+</style>
+<script>
+    window.onload=function(){
+//        console.log(Math.sin(80*Math.PI/180));
+//        console.log(Math.cos(80*Math.PI/180));
+//        var box=document.getElementsByClassName("three")[0];
+//        box.addEventListener("webkitTransitionEnd",function(){
+//
+//        })
+    }
+</script>
+<body>
+    <!--<div class="one"></div>-->
+    <!--<div class="two"></div>-->
+    <!--<div class="three">-->
+    <!--</div>-->
+    <div class="four">one</div>
+     <!--<table class="table  table-hover">-->
+         <!--<tr>-->
+             <!--<td>#</td>-->
+             <!--<td>first name</td>-->
+             <!--<td>last name</td>-->
+             <!--<td>username</td>-->
+         <!--</tr>-->
+         <!--<tr>-->
+             <!--<td>1</td>-->
+             <!--<td>mark</td>-->
+             <!--<td>outo</td>-->
+             <!--<td>@tom</td>-->
+         <!--</tr>-->
+         <!--<tr>-->
+             <!--<td>2</td>-->
+             <!--<td>ou</td>-->
+             <!--<td>to</td>-->
+             <!--<td>@smith</td>-->
+         <!--</tr>-->
+     <!--</table>-->
+</body>
+</html>
